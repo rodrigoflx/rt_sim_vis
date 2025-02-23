@@ -1,0 +1,7 @@
+set(RT_SIM_VIS_INC
+    FluidSimulator.hpp
+)
+
+PREPEND(RT_SIM_VIS_INC)
+
+set(RT_SIM_VIS_INC ${RT_SIM_VIS_INC} PARENT_SCOPE)
