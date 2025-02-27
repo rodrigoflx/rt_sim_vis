@@ -6,7 +6,15 @@ set(CMAKE_CXX_STANDARD 17)
 project(RTSimVis VERSION 1.0)
 set(RTSimVis VERSION 1.0)
 
+cmake_policy(SET CMP0072 NEW)
+set(OpenGL_GL_PREFERENCE GLVND)
+
 include(CTest)
+find_package(OpenGL REQUIRED)
+include_directories(${OPENGL_INCLUDE_DIRS})
+
+
+find_package(glfw3 CONFIG REQUIRED)
 
 # Function to prepend the subdirectory to source files in subdirectories
 function(PREPEND var )
