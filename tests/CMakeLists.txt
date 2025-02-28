@@ -20,4 +20,4 @@ enable_testing()
 # Add tests manually here
 #add_test(NAME TestRTSimVis  COMMAND TestRTVimSis)
 
-target_link_libraries(TestRTSimVis RTSimVis)
+target_link_libraries(TestRTSimVis RTSimVis glfw)
